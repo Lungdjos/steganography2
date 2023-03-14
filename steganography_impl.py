@@ -69,3 +69,10 @@ def extract_text_from_image(image_path):
         text += chr(int(byte, 2))
     
     return text
+
+# method calls
+hide_text_in_image("my_image.png", "This is some hidden text.")
+
+# extract text
+text = extract_text_from_image("hidden_text.png")
+print(text)
